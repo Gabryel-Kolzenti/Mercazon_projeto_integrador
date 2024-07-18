@@ -1,0 +1,461 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Inter;
+}
+
+:root {
+--cor1: #004F90;
+--cor2: #4693ce;
+--cor3: #4ba6e2;
+--cor4: #ebf6ff;
+--cor5: #000219;
+
+}
+header{
+    z-index: 99 !important;
+}
+
+
+/* -------------------Função touch dos carroseís------------------ */
+/* ----------------------POR A EXPLICAÇÃO DESSES CÓDIGOS--------------- */
+.carouselExampleInterval{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carouselExampleIndicators{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-inner{
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+/* -------------------Função touch dos carroseís------------------ */
+
+/*---------------------------------Formatações Globais---------------------------------*/
+
+h3{
+    position: relative;
+    left: 8% !important;
+}
+
+h3:after{
+    display: block;
+    content: "";
+    position: relative;
+    top: 1rem;
+    height: 2px;
+    width: 50% !important;
+    background-color: var(--cor1);
+}
+
+/* -----------------------------------Formatação dos Botões Padrão------------------------- */
+
+#btn-p1{
+    background-color: #4693ce;
+    color: #ebf6ff;
+    border: none;
+    padding: 0.5rem;
+    width: 20rem;
+    border-radius: 3px;
+    box-shadow:3px 3px 1px  #2d7aad ;
+    margin-left: 2rem;
+}
+    
+#btn-p1:hover{   
+    transform: translatey(3px);
+    box-shadow: none;
+    transition: 0.1s;
+}
+    
+#btn-p2{
+    background-color: #4693ce;
+    color: #ebf6ff;
+    border: none;
+    padding: 0.4rem;
+    width: 13rem;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+        
+#btn-p2:hover{        
+    transform: translatey(-3px);
+    transition: 0.3s;
+    filter: none;
+}
+    
+#btn-p3{   
+    background-color: var(--cor4);
+    color: var(--cor2);
+    border: none;
+    padding: 0.2rem;
+    width: 9.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-left: 2rem;
+    border: var(--cor2) 0.13rem solid;
+}
+    
+#btn-p3:hover{            
+    color: var(--cor4);
+    background-color: var(--cor2);
+    transition: 0.3s;
+}
+
+/*-----------------------------------Formatação dos Botões Padrão------------------------- */
+
+#main{
+    position: relative;
+    top: 3vh;
+}
+
+/* ------------------------------Top Carrossel--------------------------------- */
+
+.carousel-item img{
+    width: 100%;
+}
+
+/* ------------------------------Top Carrossel--------------------------------- */
+
+/* ----------------------------Carrossel das Categorias-------------------- */
+
+.h3Categorias{
+    position: relative;
+    top: 15vh;
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--cor1) !important;
+}
+
+#carrosel_categorias{
+    position: relative;
+    top: 20vh;
+    left: 3% !important;
+}
+
+#carrosel_categorias svg{
+    width: 15vw;
+    height: 7.5vh;
+    border-radius: 4px;
+}
+
+.pCatego{
+    position: relative;
+    right: 17%;
+    height: 5vh;
+    font-size: 1.15rem;
+    color: var(--cor1);
+    text-align: center;
+}
+
+
+/* ----------------------------Carrossel das Categorias-------------------- */
+
+
+
+
+
+/* -------------------Carrossel das Lojas Perto da Pessoa------------------- */
+
+.h3LojasPerto{
+    position: relative;
+    top: 25vh;
+    color: var(--cor1);
+}
+
+/* #carrosel_lojasPerto{
+    position: relative;
+    top: 60% !important;
+    left: 7%;
+    color: var(--cor1);
+} */
+
+.lojasPerto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: 30vh;
+    left: 8vw;
+}
+
+.lojasPerto-item img{
+    height: 75%;
+    width: 75%;
+}
+
+.pLojasPerto{
+    font-size: 1.2rem;
+    color: var(--cor1);
+}
+
+.bLojasPerto{
+    all: unset;
+    position: relative;
+    top: 34vh;
+}
+
+/* -------------------Carrossel das Lojas Perto da Pessoa------------------- */
+
+
+
+/* --------------------Produtos Mais Buscados--------------------- */
+
+.h3MaisBuscados{
+    position: relative;
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--cor1) !important;
+}
+
+.h3MaisBuscados{
+    top: 40vh;
+}
+
+.produtosMaisBuscados{
+    position: relative;
+    top: 45vh;
+}
+
+/* --------------------Produtos Mais Buscados--------------------- */
+
+/* -----------------------Cadastro com img de fundo-------------------- */
+
+.cadastroMaisimg{
+    position: relative;
+    top: 50vh;
+    left: 0%;
+    height: 17rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cadastroMaisimg p{
+    position: relative;
+    top: 3rem;
+    font-size: 1.8rem;
+    color: var(--cor1);
+    text-align: center;
+}
+
+.cadastroMaisimg button{
+    position: relative;
+    top: 3rem;
+    left: 18%;
+    font-size: 1.2rem;
+}
+
+
+  
+.cadastroMaisimg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0.5;
+background: url(imgs/monochrome-image-8598798_640.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+}
+  
+
+/* -----------------------Cadastro com img de fundo-------------------- */
+
+/* --------------------As perguntas que ficam na parte de baixo do site------------------------- */
+
+.perguntasEmbaixo{
+    display: flex;
+    position: relative;
+    top: 60vh;
+    left: 2%;
+    justify-content: space-around;
+}
+
+.perguntasEmbaixo_child{
+    width: 30%;
+}
+
+.perguntasEmbaixo_child svg{
+    position: relative;
+    left: 15%;
+    width: 40%;
+    height: 40%;
+}
+
+.perguntasEmbaixo_child-textos{
+    position: relative;
+    top: 10%;
+    /* text-align: center; */
+}
+
+.perguntasEmbaixo_child-textos p{
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+/* .perguntasEmbaixo_child p{
+    position: relative;
+    top: 10%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 900;
+    min-height: 35%;
+} */
+
+
+
+/* --------------------As perguntas que ficam na parte de baixo do site------------------------- */
+ 
+@media all and (min-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #main{
+        position: relative;
+        top: 0vh;
+    }
+
+    #carouselExampleInterval img{
+        height: 50vh;
+    }
+
+    h3{
+        position: relative;
+        left: 4vw;
+        font-size: 2rem !important;
+    }
+
+    h3:after{
+        width: 20% !important;
+    }
+
+    #carrosel_categorias{
+        position: relative;
+        top: 30vh;
+        left: 5%;
+    }
+
+    #carrosel_categorias img{
+        height: 18vh;
+    }
+
+    .pCatego{
+        height: 10vh;
+        font-size: 1.8rem;
+    }
+
+    .h3LojasPerto{
+        position: relative;
+        top: 50vh;
+    }
+
+    .lojasPerto{
+        position: relative;
+        top: 70vh;
+    }
+
+    .pLojasPerto{
+        font-size: 1.8rem;
+    }
+
+    .bLojasPerto{
+        position: absolute;
+        top: 130vh;
+        left: 30vw;
+    }
+
+    .h3MaisBuscados{
+        position: relative;
+        top: 90vh;
+    }
+
+    .grupo-maisBuscados{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        position: relative;
+        top: 70vh;
+        left: -1%;
+    }
+
+    .maisBuscados-card button{
+        position: relative;
+        top: 5%;
+        left: -10%;
+    }
+
+    .cadastroMaisimg{
+        position: relative;
+        top: 90vh;
+        left: 25%;
+        width: 50vw;
+        height: 70vh;
+    }
+
+    .cadastroMaisimg::before{
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .cadastroMaisimg p{
+        position: relative;
+        top: 30%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .cadastroMaisimg button{
+        position: relative;
+        top: 40%;
+        left: 30%;
+    }
+
+    .perguntasEmbaixo{
+        position: relative;
+        top: 100vh;
+    }
+
+    .perguntasEmbaixo_child-textos p{
+        font-size: 1.5rem;
+    }
+
+    .perguntasEmbaixo_child-textos a{
+        position: relative;
+        left: 20%;
+        font-size: 1.3rem;
+    }
+
+    /* .perguntasEmbaixo_child p{
+        position: relative;
+        left: 10%;
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 50%;
+    }
+
+    .perguntasEmbaixo_child a{
+        position: relative;
+        left: 20%;
+    } */
+
+    /* .perguntasEmbaixo_child{
+        width: 100%;
+    } */
+
+    footer{
+        position: relative;
+        bottom: -150vh;
+    }
+}

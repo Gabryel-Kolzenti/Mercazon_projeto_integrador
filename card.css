@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    border-radius: 4px;
+    background-color: #c5c5c5;
+    width: 60%;
+
+    /* As formatações abaixo para esse class são apenas para essa página (não por no site final) */
+    position: relative;
+    left: 14vw;
+}
+
+.cardImg img{
+    height: 30vh;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cardTextos{
+    padding: 3%;
+}
+
+.cardDinheiro{
+    font-size: 1.6rem;
+}
+
+.cardH4{
+    all: unset;
+    font-size: 1.4rem;
+}
+
+.cardDescricao{
+    font-size: 1.1rem;
+    min-height: 20vh;
+}
+
+.grupo-cardLocal{
+    display: flex;
+}
+
+.cardLocal{
+    font-size: .9rem;
+    margin-top: 2%;
+}

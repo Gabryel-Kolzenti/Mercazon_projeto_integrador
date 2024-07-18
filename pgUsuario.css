@@ -1,0 +1,134 @@
+/*---------------------Referente a aparecer os elementos no carrinho de favoritos-------------*/
+.dropdown-menu{
+    width: 200px !important;
+}
+
+.dropdown-item{
+align-items: center;
+text-align: center;
+width: 100%;
+transition: 0.25s;
+}
+
+.dropdown-item:hover{
+transition: 0.25s;
+background-color: yellow;
+}
+
+.dropdown-item:hover img{
+transition: 0.25s;
+transform: scale(1.1);
+}
+
+.dropdown-item:active{ 
+transition: 0.25s;
+transform: scale(1.06);
+background-color: yellow;
+color: black !important;
+}
+
+.dropdown-menu .d-flex{
+height: 75px;
+}
+
+.dropdown-item img{
+height: 100%;
+width: 60px !important;
+}
+
+.dropdown-item div {
+    width: 64% !important;
+    height: 100%;
+    white-space: wrap !important;
+}
+
+/*---------------------Referente a aparecer os elementos no carrinho de favoritos-------------*/
+
+main{
+    width: 100%;
+    padding: 3% 7%;
+}
+
+main h1{
+    width: 30%;
+    border-bottom: 2px solid black;
+}
+
+main .containerDasInfoIniciais {
+    position: relative;
+    display: flex;
+    padding: 0.5% 2%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .containerDasInfoIniciais img{
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+    border: 4px solid black;
+    padding: 0%;
+}
+
+
+main .containerDasInfoIniciais img:hover{
+    transform: scale(1.07);
+    transition: 0.25s;
+    border-color: #004F90;
+}
+
+.containerDasInfoIniciais .d-flex div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 700px !important; /*Alterar para responsividade*/
+}
+
+main .containerDasInfoIniciais a{
+    margin-top: 10%;
+    font-size: 0.55rem;
+    transition: 0.25s;
+}
+
+main .containerDasInfoIniciais a:hover{
+    transform: scale(1.02);
+    transition: 0.25s;
+}
+
+main .containerDasInfoIniciais .engrenagem{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    border: none;
+}
+
+.engrenagem:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+main h1:nth-child(2){
+    width: 38%;
+    margin-top: 10%;
+    border-bottom: 2px solid black;
+}
+
+/*-------------------------------Modal-----------------------------*/
+.modal-body form #loginBotao{
+    transition: 0.25s;
+    margin-top: 10%;
+}
+/*-------------------------------Modal-----------------------------*/
+
+
+
+

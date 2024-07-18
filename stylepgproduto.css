@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: inter;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 5vh;
+}
+
+
+
+:root {
+
+    --cor1: #004F90;
+    --cor2: #4693ce;
+    --cor3: #4ba6e2;
+    --cor4: #ebf6ff;
+    --cor5: #000219;
+
+}
+
+img.imgPrincipal {
+    width: 94%;
+}
+
+.imgPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preco {
+    margin: 2rem 2rem -0.8rem 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 300;
+}
+
+h1,
+h3,
+h6 {
+    font-size: 2rem !important;
+}
+
+#h3 {
+    color: var(--cor1);
+}
+
+.tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+tr {
+    max-width: 90%;
+}
+
+.divdobtnazul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+button.btngrandeazul {
+    background-color: var(--bgbotaoazul);
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+    font-family: inter;
+    font-weight: 600;
+    color: var(--cor4);
+    width: 88%;
+    height: fit-content;
+    font-size: 1.5rem;
+    box-shadow: #116db9da 5px 5px;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    background-color: var(--cor1);
+}
+
+#date {
+    font-size: 1.5rem !important;
+    opacity: 0.5;
+    color: #000000 !important;
+}
+
+h1 {
+    margin-bottom: 2rem !important;
+    font-size: 3rem !important;
+}
+
+.produtoInt {
+    display: flex;
+}
+
+.legenda {
+    display: block;
+    max-width: 40vw;
+    max-height: 25vh;
+    color: var(--cor5);
+}
+
+#ordenar{
+    display: flex;
+    flex-direction: row-reverse;
+    
+
+}
+
+.nomedata {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: var(--cor1);
+}
+
+.descricao {
+    font-size: 1.2rem;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao p{
+    margin-left: 4rem;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1rem !important;
+    margin-top: 10% !important;
+}
+
+h2.titulos {
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.5rem !important;
+    margin-top: 10% !important;
+    color: #004F90;
+}
+
+h4 {
+    font-size: 2rem !important;
+    color: #004F90 !important;
+
+}
+
+/* -------------------  CARROSSEL  --------------------- */
+
+#carrosel_lojasPerto {
+    position: relative;
+    top: 30vh;
+    left: 7%;
+    color: var(--cor1);
+}
+
+#row img {
+    height: 45% !important;
+    width: 25vh !important;
+    margin-top: 10%;
+    margin-left: 10% !important;
+}
+
+.pLojasPerto {
+    font-size: 1.2rem;
+    color: var(--cor1);
+    margin-left: 10% !important;
+}
+
+.bLojasPerto {
+    all: unset;
+    position: relative;
+    top: 30vh;
+}
+
+
+
+.carouselExampleInterval {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: space-between;
+}
+
+#carouselExampleInterval {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.carousel-inner {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+/* -------------------CARROSSEL FINAL --------------------- */
+/* --------------- SOBRE ANUNCIANTE ---------------------- */
+#antes-anunciante {
+    border: #00000077 solid 2px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    padding: 5vw;
+}
+
+img.Img-anunciante {
+    height: 70px;
+    width: 80px;
+    margin-right: 4vw;
+    border-radius: 50%;
+}
+
+#conjunto {
+    display: flex;
+    align-items: left;
+    align-self: center !important;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+}
+
+#nome-anunciante {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#moreinfo {
+    display: flex !important;
+    justify-content: flex-start !important;
+    justify-self: left;
+    font-size: 1.3rem;
+    margin-bottom: -10vh;
+    margin-top: 10vh;
+    flex-direction: column !important;
+}
+
+#complemento {
+    font-size: 1.2rem;
+}
+
+/* --------------- SOBRE ANUNCIANTE (final) ---------------------- */
+
+.maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+
+
+/* o media tem q estar em baixo se n da pau */
+@media (min-width:760px) {
+
+    .row {
+       margin-left: 10vw !important;
+    }
+
+    .legenda {
+        max-width: 20vw;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    img.imgPrincipal {
+        width: 40%;
+        margin-top: -1% !important;
+    }
+
+    #logo {
+        width: 3rem;
+        margin-right: 5rem;
+    }
+
+    #usuario {
+
+
+        width: 2.5rem;
+        margin-left: 5rem;
+        margin-right: 0.5rem;
+    }
+
+    #favoritos {
+
+        width: 2.5rem;
+        margin-left: 0.7rem;
+
+    }
+
+    #buscarInput {
+        width: 30vw;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        font-family: inter;
+        font-weight: 600;
+        padding-left: 15px;
+        color: #000000;
+        height: 2.5rem;
+
+    }
+
+    #logo {
+        width: 3rem;
+        margin-right: 5rem;
+    }
+
+    #span1 {
+        margin-left: 8rem;
+        border-right: var(--cor4) 1px solid;
+        font-size: medium;
+        padding-right: 1rem;
+    }
+
+    #span2 {
+        margin-left: 1rem;
+        font-size: medium;
+    }
+
+    #container {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid white;
+    }
+
+    #subcontainer2 {
+
+        margin-bottom: 2.3rem;
+
+    }
+
+
+    #containerchild3 {
+
+        margin-bottom: 5rem;
+        margin-right: 5rem;
+
+    }
+
+    #containerchild2 {
+
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+
+    }
+}
+
+@media(max-width: 330px) {
+    #main{
+        margin-top: 25vh;
+    }
+    #preco{
+        font-size: 0.5rem !important;
+    }
+}
